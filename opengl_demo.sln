@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opengl_example", "..\opengl_example\example.vcproj", "{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glew_static", "..\..\algorithm-analysis-siryang\third lib\opengl\tool\glew\build\vc8\glew_static.vcproj", "{410D293F-789B-45EE-A02A-AF84DD060F70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "render_background", "config_2008\render_background.vcproj", "{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MX|Win32 = Debug MX|Win32
+		Debug|Win32 = Debug|Win32
+		Release MX|Win32 = Release MX|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Debug MX|Win32.ActiveCfg = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Debug MX|Win32.Build.0 = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Debug|Win32.ActiveCfg = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Debug|Win32.Build.0 = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Release MX|Win32.ActiveCfg = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Release MX|Win32.Build.0 = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Release|Win32.ActiveCfg = Release|Win32
+		{0A16E49F-FFF5-47C6-88F9-1ECBE605C2BB}.Release|Win32.Build.0 = Release|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Debug MX|Win32.ActiveCfg = Debug MX|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Debug MX|Win32.Build.0 = Debug MX|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Debug|Win32.ActiveCfg = Debug|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Debug|Win32.Build.0 = Debug|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Release MX|Win32.ActiveCfg = Release MX|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Release MX|Win32.Build.0 = Release MX|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Release|Win32.ActiveCfg = Release|Win32
+		{410D293F-789B-45EE-A02A-AF84DD060F70}.Release|Win32.Build.0 = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Debug MX|Win32.ActiveCfg = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Debug MX|Win32.Build.0 = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Debug|Win32.ActiveCfg = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Debug|Win32.Build.0 = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release MX|Win32.ActiveCfg = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release MX|Win32.Build.0 = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release|Win32.ActiveCfg = Release|Win32
+		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
