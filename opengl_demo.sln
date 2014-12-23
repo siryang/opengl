@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glew_static", "..\..\algori
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "render_background", "config_2008\render_background.vcproj", "{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "painter", "config_2008\painter.vcproj", "{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -39,6 +41,14 @@ Global
 		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release MX|Win32.Build.0 = Release|Win32
 		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release|Win32.ActiveCfg = Release|Win32
 		{79CA0CA3-B4A6-4D32-A924-FB77041E6C11}.Release|Win32.Build.0 = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Debug MX|Win32.ActiveCfg = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Debug MX|Win32.Build.0 = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Debug|Win32.ActiveCfg = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Debug|Win32.Build.0 = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Release MX|Win32.ActiveCfg = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Release MX|Win32.Build.0 = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Release|Win32.ActiveCfg = Release|Win32
+		{06C7967C-CA0E-4F4B-AB06-38BFC71783E0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
