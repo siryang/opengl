@@ -13,7 +13,7 @@ struct Point
 
 using namespace std;
 
-int width = 512, height = 512;
+int width = 1024, height = 1024;
 
 template<class Iter>
 void drawPolygon(Iter begin, Iter end)
@@ -41,23 +41,25 @@ void render()
 	//glEnd();
 
 	// rect
-	glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
 	Point polygonRect[] = {
 		{0, 0},
-		{0, 100},
-		{100, 100},
-		{100, 0},
+		{0, 50},
+		{50, 50},
+		{50, 0},
 	};
 
 	glPushMatrix();
 	glMatrixMode(GL_MODELVIEW);
 
+	glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
 	drawPolygon(&polygonRect[0], &polygonRect[0] + element_of(polygonRect));
 
-	glTranslatef(10.0f, 0, 0);
+	glColor4f(0.0f, 1.0f, 0.0f, 1.0f);
+	glTranslatef(60.0f, 0, 0);
 	drawPolygon(&polygonRect[0], &polygonRect[0] + element_of(polygonRect));
 
-	glTranslatef(.0f, 10.0f, 0);
+	glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+	glTranslatef(-60.0f, 60.0f, 0);
 	drawPolygon(&polygonRect[0], &polygonRect[0] + element_of(polygonRect));
 	glPopMatrix();
 
@@ -86,12 +88,14 @@ void resize(GLsizei w, GLsizei h)
 	if (w <= h)
 	{
 		aspectRatio = (GLfloat)h / (GLfloat)w;
-		glOrtho (-100.0, 100.0, -100 * aspectRatio, 100.0 * aspectRatio, 1.0, -1.0);
+		//glOrtho (-100.0, 100.0, -100 * aspectRatio, 100.0 * aspectRatio, 1.0, -1.0);
+
+		glOrtho(0, h, 0, w, 1023.0f, 1024.0f);
+		//glFrustum(0, h/2, 0, w/2, 512.0f, 2048.0f);
+
 	//	//gluPerspective(90.0f, 1/aspectRatio, 255.99f, 1024.0f);
 	//	//glFrustum(-50, 50, -50*aspectRatio, 50*aspectRatio, 0.1f, 100.0f);
-	//	//glFrustum(-1.00, 1.00, 1.00, -1.00, 0.1f, 100000.0f);
 
-	//	//glFrustum(0, h/2, 0, w/2, 256.0f, 1024.0f);
 	//	//glOrtho (-h/2, h/2, -w/2, w/2, 1.0, 1024.0);
 	//	//glOrtho (0, h, 0, w, 1.0, 1024.0);
 	}
@@ -103,7 +107,7 @@ void resize(GLsizei w, GLsizei h)
 	} 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	gluLookAt(0, 0, 1.0f, 0, 0, 0, 0.0f, 1.0f, 0.0f);
+	gluLookAt(0, 0, 1024.0f, 0, 0, 0, 0.0f, 1.0f, 0.0f);
 }
 
 
