@@ -15,6 +15,9 @@
 		0BD61E411D6EC948000953B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD61E401D6EC948000953B6 /* Assets.xcassets */; };
 		0BD61E441D6EC948000953B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD61E421D6EC948000953B6 /* LaunchScreen.storyboard */; };
 		0BD61E4E1D6EC994000953B6 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BD61E4C1D6EC994000953B6 /* triangle.cpp */; };
+		0BD61E501D6ED304000953B6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD61E4F1D6ED304000953B6 /* OpenGLES.framework */; };
+		0BD61E521D6ED320000953B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD61E511D6ED320000953B6 /* QuartzCore.framework */; };
+		0BD61E541D6ED328000953B6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD61E531D6ED328000953B6 /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		0BD61E451D6EC948000953B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD61E4C1D6EC994000953B6 /* triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangle.cpp; sourceTree = "<group>"; };
 		0BD61E4D1D6EC994000953B6 /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
+		0BD61E4F1D6ED304000953B6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0BD61E511D6ED320000953B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0BD61E531D6ED328000953B6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD61E541D6ED328000953B6 /* GLKit.framework in Frameworks */,
+				0BD61E521D6ED320000953B6 /* QuartzCore.framework in Frameworks */,
+				0BD61E501D6ED304000953B6 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +56,9 @@
 		0BD61E251D6EC948000953B6 = {
 			isa = PBXGroup;
 			children = (
+				0BD61E531D6ED328000953B6 /* GLKit.framework */,
+				0BD61E511D6ED320000953B6 /* QuartzCore.framework */,
+				0BD61E4F1D6ED304000953B6 /* OpenGLES.framework */,
 				0BD61E4B1D6EC994000953B6 /* source */,
 				0BD61E301D6EC948000953B6 /* gles_sample */,
 				0BD61E2F1D6EC948000953B6 /* Products */,
@@ -319,6 +331,7 @@
 				0BD61E4A1D6EC948000953B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
