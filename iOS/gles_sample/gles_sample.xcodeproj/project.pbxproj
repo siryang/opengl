@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B74C2CF1D7D964500E41317 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B74C2CE1D7D964500E41317 /* shader.cpp */; };
 		0BD61E331D6EC948000953B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD61E321D6EC948000953B6 /* main.m */; };
 		0BD61E361D6EC948000953B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD61E351D6EC948000953B6 /* AppDelegate.m */; };
 		0BD61E391D6EC948000953B6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0BD61E381D6EC948000953B6 /* ViewController.mm */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B74C2CD1D7D93D500E41317 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		0B74C2CE1D7D964500E41317 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		0B74C2D01D7D96D400E41317 /* basic_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_type.h; sourceTree = "<group>"; };
 		0BD61E2E1D6EC948000953B6 /* gles_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gles_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD61E321D6EC948000953B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BD61E341D6EC948000953B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +105,9 @@
 		0BD61E4B1D6EC994000953B6 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				0B74C2D01D7D96D400E41317 /* basic_type.h */,
+				0B74C2CE1D7D964500E41317 /* shader.cpp */,
+				0B74C2CD1D7D93D500E41317 /* shader.h */,
 				0BD61E4C1D6EC994000953B6 /* triangle.cpp */,
 				0BD61E4D1D6EC994000953B6 /* triangle.h */,
 			);
@@ -178,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B74C2CF1D7D964500E41317 /* shader.cpp in Sources */,
 				0BD61E3F1D6EC948000953B6 /* gles_sample.xcdatamodeld in Sources */,
 				0BD61E391D6EC948000953B6 /* ViewController.mm in Sources */,
 				0BD61E361D6EC948000953B6 /* AppDelegate.m in Sources */,

@@ -9,6 +9,8 @@
 @implementation ViewController
 @synthesize context;
 
+gles::DemoEntry g_glesDemo;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -27,16 +29,17 @@
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
 
     // initialize demo
-    gles::DemoEntry::init();
+    g_glesDemo.init(800, 600);
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    NSLog(@"drawInRect");
-    gles::DemoEntry::draw();
+    // NSLog(@"drawInRect");
+    g_glesDemo.draw();
+    [context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
 - (void)update {
-    NSLog(@"update");
+    // NSLog(@"update");
 }
 
 - (void)didReceiveMemoryWarning {
