@@ -29,10 +29,11 @@ namespace gles {
         glUseProgram(m_programObject);
 
         const float vertices[] = {
-            -100, 100,
-            100, 100,
-            100, -100
+            -0.5, 0.2,
+            0.5, 0.5,
+            0.5, -0.5
         };
+        // GLES2没有glMatrix的ModelView和Projection定义，默认传入Shader的顶点都是归一化定点，如果需要变换，可以将Projection当做参数传入，在Shader中变换。
         GLuint positionLocation = glGetAttribLocation(m_programObject, "a_position");
         glVertexAttribPointer(positionLocation, 2, GL_FLOAT, GL_FALSE, 0, vertices);
         glEnableVertexAttribArray(positionLocation);
