@@ -29,7 +29,7 @@ gles::DemoEntry g_glesDemo;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
 
     // initialize demo
-    g_glesDemo.init(800, 600);
+    g_glesDemo.init(1242, 2208);
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {

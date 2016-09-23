@@ -11,6 +11,10 @@ namespace gles {
         void cleanup();
     private:
         GLuint m_programObject;
+        int m_width, m_height;
+        GLuint m_positionVar;
+        GLuint m_timeVar;
+        long m_startSecond;
     };
 }
 
